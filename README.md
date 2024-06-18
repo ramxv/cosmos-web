@@ -21,19 +21,20 @@ El sitio web incluye las siguientes páginas:
 - **Font Awesome**: Para iconos atractivos.
 
 ## Estructura de Archivos
+```
 /cosmos-web
-|-- index.html
-|-- history.html
-|-- exploration.html
-|-- solar_system.html
-|-- mysteries.html
-|-- css
-| |-- styles.css
-|-- js
-| |-- scripts.js
-|-- img
-| |-- (imágenes relacionadas con el cosmos)
-
+├── index.html
+├── historia.html
+├── exploracion.html
+├── sistema_solar.html
+├── misterios.html
+├── css
+│   └── styles.css
+├── js
+│   └── scripts.js
+└── img
+    └── (imágenes relacionadas con el cosmos)
+```
 
 ## Nomenclatura de Branches y Commits
 
