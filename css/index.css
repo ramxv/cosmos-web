@@ -3,9 +3,9 @@ html body{
 	margin: 0;
 	padding: 0;
 	position: relative;
-	height: 100vh;
+	min-height: 100vh;
 	width: 100vw;
-	overflow: hidden;
+	overflow-x: hidden;
 	color: #fff;
 }
 
@@ -63,7 +63,6 @@ h1{
 	z-index: -1;
 	width: 1px; /* Ajusta el tamaño de las estrellas si es necesario */
 	height: 1px; /* Ajusta el tamaño de las estrellas si es necesario */
-	box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.5);
 	animation: orbitar 50s linear infinite; /* Animación infinita */
 }
 
