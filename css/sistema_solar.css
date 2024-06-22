@@ -1,0 +1,38 @@
+.carousel-item {
+	margin: auto;
+	height: 70vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #101010;
+	padding: 10px;
+}
+
+.carousel-item img {
+	max-height: 100%;
+	max-width: 100%;
+	object-fit: contain;
+}
+
+.carousel-caption {
+	background-color: rgba(16, 16, 16, 0.5);
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.planet-info {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px 0;
+	border-top: 1px solid #444;
+}
+
+.planet-info div {
+	text-align: center;
+}
+
+.planet-info h5 {
+	color: #00f;
+}
+
