@@ -1,4 +1,5 @@
-body {
+
+html body {
     font-family: 'Roboto', sans-serif;
     background-color: #000;
     color: #fff;
@@ -19,16 +20,16 @@ body {
 
 .timeline {
     position: relative;
-    max-width: 1200px;
+    max-width:  1200px;
     margin: 40px auto;
     padding: 0 40px;
 }
 
-.container {
+.contenedor {
     padding: 20px 40px;
     position: relative;
     background-color: inherit;
-    width: 50%;
+    width: 60%;
     display: flex;
     align-items: center;
     transition: all 0.5s ease-in-out;
@@ -37,15 +38,15 @@ body {
     animation: fadeInUp 1s forwards;
 }
 
-.container.left {
+.contenedor.left {
     left: 0;
 }
 
-.container.right {
+.contenedor.right {
     left: 45%;
 }
 
-.container::after {
+.contenedor::after {
     content: "";
     position: absolute;
     width: 25px;
@@ -58,7 +59,7 @@ body {
     z-index: 1;
 }
 
-.container.left::after {
+.contenedor.left::after {
     left: -16px;
 }
 
@@ -75,7 +76,7 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-.container:hover .content {
+.contenedor:hover .content {
     transform: scale(1.05);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
 }
@@ -88,7 +89,7 @@ body {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.container:hover .content img {
+.contenedor:hover .content img {
     transform: scale(1.1);
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
@@ -97,7 +98,7 @@ body {
     flex-grow: 1;
 }
 
-h2 {
+.text h2 {
     margin: 0 0 10px;
     font-size: 18px;
     color: #e48749;
@@ -110,14 +111,14 @@ p {
 }
 
 @media screen and (max-width: 600px) {
-    .container {
+    .contenedor {
         width: 100%;
         padding-left: 70px;
         transform: translateY(50px);
         animation: fadeInUpMobile 0.5s forwards;
     }
 
-    .container.right {
+    .contenedor.right {
         left: 0%;
     }
 
@@ -151,4 +152,66 @@ p {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.svg-logo {
+	width: 50px;
+	height: 50px;
+}
+
+.navbar-glassmorphism {
+	background: rgba(255, 255, 255); /* Fondo blanco semitransparente */
+	backdrop-filter: blur(10px); /* Efecto de desenfoque */
+	-webkit-backdrop-filter: blur(10px); /* Efecto de desenfoque para navegadores webkit */
+	border: 1px solid rgba(255, 255, 255, 0.3); /* Borde claro */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+	padding: 1rem;
+}
+
+.navbar-glassmorphism .navbar-nav .nav-link {
+	color: black; /* Color del texto */
+	transition: color 0.3s ease-in-out;
+}
+
+.navbar-glassmorphism .navbar-nav .nav-link:hover {
+	color: #1e3a8a; /* Color del texto al pasar el ratón */
+}
+
+.navbar-glassmorphism .form-control {
+	background: rgba(255, 255, 255, 0.2);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	color: white;
+}
+
+.navbar-glassmorphism .btn-outline-success {
+	color: white;
+	border-color: white;
+}
+
+.navbar-glassmorphism .btn-outline-success:hover {
+	color: #ddd;
+	border-color: #ddd;
+}
+
+.estrella {
+	position: absolute;
+	background-color: white;
+	border-radius: 50%;
+	border-style: solid;
+	border-color: white transparent transparent transparent;
+	border-width: 0.1em 0.1em 0 0;
+	z-index: -1;
+	width: 1px; /* Ajusta el tamaño de las estrellas si es necesario */
+	height: 1px; /* Ajusta el tamaño de las estrellas si es necesario */
+	animation: orbitar 50s linear infinite; /* Animación infinita */
+}
+
+/* Animación para mover las estrellas en un patrón circular */
+@keyframes orbitar {
+	0% {
+			transform: rotate(0deg) translateX(20vw) rotate(0deg);
+	}
+	100% {
+			transform: rotate(360deg) translateX(20vw) rotate(-360deg);
+	}
 }
