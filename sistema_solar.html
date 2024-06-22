@@ -1,39 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<div id="carouselExampleCaptions" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="..." class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/sistema_solar.css">
+	<!-- BOOTSTRAP CDN LINK  CSS-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<title>Sistema Solar</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-glassmorphism">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">
+				<img src="assets/svg/cosmos-logo.svg" class="svg-logo" alt="" srcset="">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="index.html">Cosmos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="exploracion.html" onclick="">Exploración</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="historia.html">Historia</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="misterios.html">Misterios</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="sistema_solar.html">Sistema Solar</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<header class="header">
+		<div class="overlay"></div>
+		<div class="container h-100">
+				<div class="row h-100 align-items-center justify-content-center text-center">
+						<div class="col-lg-10">
+								<h1 class="display-4 text-white">Explorando el Sistema Solar</h1>
+								<p class="lead text-white-50">Descubre los secretos de los planetas y más allá.</p>
+						</div>
+				</div>
+		</div>
+</header>
+	<div class="container">
+		<div class="timeline">
+			<div class="timeline-item" id="sun">
+				<div class="planet">
+					<img src="assets/img/sistema-solar/sol.png" alt="Sol">
+					<div class="more-info">
+						<h1>El Sol</h1>
+						<ul>
+							<li>Tamaño Gigantesco: Tiene un diámetro de aproximadamente 1.4 millones de kilómetros, lo que equivale a
+								109 veces el diámetro de la Tierra.</li>
+							<li>Composición Principal: Está compuesto principalmente de hidrógeno (aproximadamente 74%) y helio
+								(aproximadamente 24%), con trazas de otros elementos.</li>
+							<li>Ciclo Solar: Pasa por un ciclo de actividad de aproximadamente 11 años, durante el cual la cantidad de
+								manchas solares y actividad solar varía significativamente.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="timeline-item" id="mercury">
+				<div class="planet">
+					<img src="assets/img/sistema-solar/mercurio.png" alt="Mercurio">
+					<div class="more-info">
+						<h1>Mercurio</h1>
+						<ul>
+							<li>Temperatura Extrema: Oscila entre -173°C por la noche y 427°C durante el día.</li>
+							<li>Superficie Llena de Cráteres: Similar a la Luna, debido a la falta de atmósfera significativa.</li>
+							<li>Rotación Lenta: Un día en Mercurio dura aproximadamente 59 días terrestres.</li>
+							<li>Campo Magnético Débil: Sorprendentemente fuerte para su tamaño, generando un campo magnético propio.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="timeline-item" id="venus">
+				<div class="planet">
+					<img src="assets/img/sistema-solar/venus.png" alt="Venus">
+					<div class="more-info">
+						<h1>Venus</h1>
+						<ul>
+							<li>Temperatura Sofocante: Temperaturas superficiales de aproximadamente 465°C, más caliente que Mercurio.
+							</li>
+							<li>Atmósfera Densa: Compuesta principalmente de dióxido de carbono con nubes de ácido sulfúrico.</li>
+							<li>Rotación Retrógrada: Gira en sentido contrario al de la mayoría de los planetas.</li>
+							<li>Presión Atmosférica Extrema: 92 veces la presión de la Tierra, similar a la de estar a 900 metros bajo
+								el agua.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="timeline-item" id="earth">
+				<div class="planet">
+					<img src="assets/img/sistema-solar/tierra.png" alt="Tierra">
+					<div class="more-info">
+						<h1>La Tierra</h1>
+						<ul>
+							<li>Presencia de Agua Líquida: 71% de la superficie cubierta por agua.</li>
+							<li>Vida Abundante: Único planeta conocido con vida.</li>
+							<li>Atmósfera Rica en Oxígeno: Compuesta principalmente por nitrógeno y oxígeno.</li>
+							<li>Campo Magnético Protector: Generado por un núcleo de hierro y níquel, protege contra la radiación
+								solar.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="timeline-item" id="mars">
+				<div class="planet">
+					<img src="assets/img/sistema-solar/marte.png" alt="Marte">
+					<div class="more-info">
+						<h1>Marte</h1>
+						<ul>
+							<li>Monte Olimpo: Volcán más grande del sistema solar, tres veces la altura del Monte Everest.</li>
+							<li>Valles Marineris: Sistema de cañones que se extiende por 4,000 km, diez veces la longitud del Gran
+								Cañón.</li>
+							<li>Atmósfera Delgada: Compuesta principalmente por dióxido de carbono, con solo el 1% de la presión de la
+								Tierra.</li>
+							<li>Exploración Robótica: Ha sido visitado por numerosos rovers, incluidos Spirit, Opportunity y
+								Curiosity.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="timeline-item" id="jupiter">
+				<div class="planet">
+					<img src="assets/img/sistema-solar/jupiter.png" alt="Júpiter">
+					<div class="more-info">
+						<h1>Júpiter</h1>
+						<ul>
+							<li>Gigante Gaseoso: Compuesto principalmente de hidrógeno y helio.</li>
+							<li>Gran Mancha Roja: Tormenta gigante que ha existido durante al menos 400 años.</li>
+							<li>Lunas Numerosas: Más de 79 lunas, incluyendo Ganimedes, la luna más grande del sistema solar.</li>
+							<li>Campo Magnético Intenso: 20,000 veces más fuerte que el de la Tierra, influye en todo el sistema
+								solar.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="timeline-item" id="saturn">
+				<div class="planet">
+					<img src="assets/img/sistema-solar/saturno.png" class="saturno" alt="Saturno">
+					<div class="more-info">
+						<h1>Saturno</h1>
+						<ul>
+							<li>Anillos Espectaculares: Compuestos de hielo y roca, se extienden hasta 282,000 km desde el planeta.
+							</li>
+							<li>Densidad Baja: Menor que la del agua, podría flotar en una bañera lo suficientemente grande.</li>
+							<li>Vientos Fuertes: Velocidades de hasta 1,800 km/h en su atmósfera.</li>
+							<li>Luna Titán: Única luna con una atmósfera densa y cuerpos líquidos estables en la superficie.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="timeline-item" id="uranus">
+				<div class="planet">
+					<img src="assets/img/sistema-solar/urano.png" alt="Urano">
+					<div class="more-info">
+						<h1>Urano</h1>
+						<ul>
+							<li>Eje Inclinado: Rota de lado, con una inclinación de 98 grados, resultando en estaciones extremas.</li>
+							<li>Atmósfera Helada: Compuesta principalmente de hidrógeno, helio y metano, que le da su color azul.</li>
+							<li>Anillos Oscuros: Posee anillos tenues y oscuros hechos de partículas de hielo y polvo.</li>
+							<li>Temperatura Fría: La atmósfera más fría del sistema solar, con temperaturas de -224°C.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="timeline-item" id="neptune">
+				<div class="planet">
+					<img src="assets/img/sistema-solar/neptuno.png" alt="Neptuno">
+					<div class="more-info">
+						<h1>Neptuno</h1>
+						<ul>
+							<li>Vientos más Fuertes: Velocidades de viento de hasta 2,100 km/h.</li>
+							<li>Gran Mancha Oscura: Tormenta similar a la Gran Mancha Roja de Júpiter.</li>
+							<li>Atmósfera Azul: Debido a la presencia de metano en su atmósfera.</li>
+							<li>Luna Tritón: Única gran luna en el sistema solar que orbita en dirección opuesta a la rotación de su
+								planeta.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/scripts.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,13 +1,3 @@
-// * Función para cargar páginas desde el inico
-function cargarPagina(page) {
-  fetch(page)
-    .then((response) => response.text())
-    .then((data) => {
-      document.getElementById("contenido").innerHTML = data;
-    })
-    .catch((error) => console.error("Error al cargar la página:", error));
-}
-
 function crearEstrellas() {
 	const container = document.querySelector("body");
 	for (let i = 0; i < 1000; i++) {
@@ -31,3 +21,8 @@ function crearEstrellas() {
 
 crearEstrellas();
 
+$(document).ready(function(){
+	$('.timeline-item').hover(function(){
+			$(this).find('.planet-info').toggle();
+	});
+});
