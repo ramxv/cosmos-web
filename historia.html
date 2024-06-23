@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- CSS -->
-	<link rel="stylesheet" href="css/style.css">
-	<!-- BOOTSTRAP CDN LINK  CSS-->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-	<title>Historia - COSMOS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historias del Sistema Solar</title>
+    <link rel="stylesheet" href="css/historias.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/scripts.js"></script>
 </head>
+
 <body>
-	<nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg navbar-glassmorphism">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#">
 				<img src="assets/svg/cosmos-logo.svg" class="svg-logo" alt="" srcset="">
@@ -23,63 +22,106 @@
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
 					<li class="nav-item">
-						<a class="nav-link" href="#" onclick="cargarPagina('index.html')">Cosmos</a>
+ 						<a class="nav-link" aria-current="page" href="index.html">Cosmos</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#" onclick="cargarPagina('exploracion.html')">Exploración</a>
+						<a class="nav-link" href="exploracion.html" onclick="">Exploración</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#" onclick="cargarPagina('historia.html')">Historia</a>
+						<a class="nav-link" href="historia.html">Historia</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#" onclick="cargarPagina('misterios.html')">Misterios</a>
+						<a class="nav-link" href="misterios.html">Misterios</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#" onclick="cargarPagina('sistema_solar.html')">Sistema Solar</a>
+						<a class="nav-link" href="sistema_solar.html">Sistema Solar</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-	<div id="contenido" class="container mt-5 pt-5">
-		<h2 class="text-center mb-4">Historias del Cosmos</h2>
-		<div class="row">
-			<div class="col-md-4">
-				<div class="card mb-4">
-					<img src="assets/img/galaxy.jpg" class="card-img-top" alt="Galaxy">
-					<div class="card-body">
-						<h5 class="card-title">La Vía Láctea</h5>
-						<p class="card-text">Descubre la fascinante historia de nuestra galaxia, la Vía Láctea, hogar de miles de millones de estrellas.</p>
-						<a href="#" class="btn btn-primary">Leer más</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="card mb-4">
-					<img src="assets/img/blackhole.jpg" class="card-img-top" alt="Black Hole">
-					<div class="card-body">
-						<h5 class="card-title">Los Agujeros Negros</h5>
-						<p class="card-text">Explora los misterios de los agujeros negros, las regiones del espacio donde la gravedad es tan fuerte que nada puede escapar.</p>
-						<a href="#" class="btn btn-primary">Leer más</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="card mb-4">
-					<img src="assets/img/exoplanet.jpg" class="card-img-top" alt="Exoplanet">
-					<div class="card-body">
-						<h5 class="card-title">Exoplanetas</h5>
-						<p class="card-text">Conoce los exoplanetas, mundos que orbitan otras estrellas, y cómo los científicos los descubren y estudian.</p>
-						<a href="#" class="btn btn-primary">Leer más</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <header class="hero-section">
+        <h2 class="timeline-title">Historias del Sistema Solar</h2>
+    </header>
 
-	<script src="js/scripts.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-		crossorigin="anonymous"></script>
+    <section class="stories">
+        <div class="story glassmorphism-card">
+            <div class="story-content">
+                <div class="story-text">
+                    <h2 class="story-number" style="background-image: url('assets/img/historias/origen.jpg');">01</h2>
+                    <h3>El Origen del Sistema Solar</h3>
+                    <p>Hace aproximadamente 4.6 mil millones de años, una nube de gas y polvo en el espacio interestelar colapsó bajo su propia gravedad. 
+                    Este proceso dio origen al Sol y a los planetas que forman nuestro sistema solar. La teoría más aceptada es la de la nebulosa solar, 
+                    donde el Sol y los planetas se formaron a partir del material en rotación alrededor de un núcleo central.</p>
+                </div>
+                <div class="story-image">
+                    <img src="assets/img/historias/origen.jpg" alt="El Origen del Sistema Solar">
+                </div>
+            </div>
+        </div>
+        <div class="story glassmorphism-card">
+            <div class="story-content">
+                <div class="story-text">
+                    <h2 class="story-number" style="background-image: url('assets/img/historias/origen.jpg');">02</h2>
+                    <h3>La Gran Mancha Roja de Júpiter</h3>
+                    <p>La Gran Mancha Roja es una enorme tormenta en la atmósfera de Júpiter, visible desde la Tierra a través de telescopios. 
+                        Esta característica gigante ha persistido durante al menos 400 años y puede albergar sistemas complejos de corrientes atmosféricas. 
+                        Estudiarla ayuda a entender mejor los fenómenos meteorológicos extremos en otros planetas.</p>
+                </div>
+                <div class="story-image">
+                    <img src="assets/img/historias/gran-mancha-roja.jpg" alt="La Gran Mancha Roja de Júpiter">
+                </div>
+            </div>
+        </div>
+        <div class="story glassmorphism-card">
+            <div class="story-content">
+                <div class="story-text">
+                    <h2 class="story-number" style="background-image: url('assets/img/historias/origen.jpg');">03</h2>
+                    <h3>Los Anillos de Saturno</h3>
+                    <p>Los anillos de Saturno son uno de los rasgos más icónicos del sistema solar. Están compuestos principalmente de partículas de hielo y 
+                        roca que van desde pequeños granos hasta fragmentos del tamaño de autobuses. Estos anillos, que se extienden hasta 282,000 km del planeta, 
+                        son objeto de estudio para entender la dinámica orbital y la evolución de los sistemas planetarios.</p>
+                </div>
+                <div class="story-image">
+                    <img src="assets/img/historias/anillos_saturno.jpg" alt="Los Anillos de Saturno">
+                </div>
+            </div>
+        </div>
+        <div class="story glassmorphism-card">
+            <div class="story-content">
+                <div class="story-text">
+                    <h2 class="story-number" style="background-image: url('assets/img/historias/origen.jpg');">04</h2>
+                    <h3>La Formación de los Planetas</h3>
+                    <p>Los planetas del sistema solar se formaron a partir de un disco protoplanetario de gas y polvo que giraba alrededor del joven Sol. A medida que estas partículas colisionaban y se adherían, formaron núcleos planetarios que eventualmente se convirtieron en los planetas que conocemos hoy. Este proceso de acumulación y aglomeración es fundamental para comprender la diversidad y la composición de los planetas.</p>
+                </div>
+                <div class="story-image">
+                    <img src="assets/img/historias/formacion_planetas.jpg" alt="La Formación de los Planetas">
+                </div>
+            </div>
+        </div>
+        <div class="story glassmorphism-card">
+            <div class="story-content">
+                <div class="story-text">
+                    <h2 class="story-number" style="background-image: url('assets/img/historias/origen.jpg');">05</h2>
+                    <h3>El Futuro de la Exploración Espacial</h3>
+                    <p>Las misiones espaciales futuras tienen como objetivo expandir nuestro conocimiento más allá del sistema solar. 
+                        Esto incluye la búsqueda de vida en exoplanetas, la exploración de lunas heladas en nuestro sistema solar exterior, 
+                        y el estudio de los límites del espacio interestelar. Estas misiones no solo expanden nuestro entendimiento científico, 
+                        sino que también plantean preguntas fundamentales sobre nuestra posición en el universo y las posibilidades de vida más allá de la Tierra.</p>
+                </div>
+                <div class="story-image">
+                    <img src="assets/img/historias/futuro_exploracion.jpg" alt="El Futuro de la Exploración Espacial">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cosmos | UTP Panamá Oeste</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 </html>

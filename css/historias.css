@@ -1,0 +1,208 @@
+/* Estilos generales */
+html body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0a0a0a;
+    color: #ffffff;    
+}
+
+/* Navbar */
+.navbar-glassmorphism {
+    background: rgba(255, 255, 255); /* Fondo blanco semitransparente */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    -webkit-backdrop-filter: blur(10px); /* Efecto de desenfoque para navegadores webkit */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borde claro */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    padding: 1rem;
+}
+
+/* Logo del navbar */
+.svg-logo {
+    width: 50px;
+    height: 50px;
+}
+
+/* Enlaces del navbar */
+.nav-link {
+    color: #fff;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+/* Tarjetas de historia */
+.card.glassmorphism-card {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+/* Título de la línea de tiempo */
+.timeline-title {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 36px;
+    color: #e73b06;
+    border-bottom: 2px solid #f3f0ee;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Sección del héroe */
+.hero-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/historias/galaxy.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+/* Título del héroe */
+.hero-section h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+/* Contenedor de las historias */
+.stories {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Tarjeta de historia */
+.story {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 1rem 0;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    overflow: hidden;
+}
+
+/* Efecto de escalar al pasar el cursor sobre la historia */
+.story:hover {
+    transform: scale(1.05);
+}
+
+/* Contenido de la historia */
+.story-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+/* Texto de la historia */
+.story-text {
+    flex: 1;
+    padding-right: 1rem;
+    position: relative;
+}
+
+/* Número de la historia */
+.story-number {
+    font-size: 4rem;
+    margin: 0;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+/* Título de la historia */
+.story h3 {
+    font-size: 2rem;
+    margin: 0.5rem 0 1rem;
+}
+
+/* Párrafo de la historia */
+.story p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Imagen de la historia */
+.story-image {
+    flex: 1;
+    position: relative;
+}
+
+/* Imagen de la historia */
+.story-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Efecto de opacidad al pasar el cursor sobre la imagen */
+.story:hover .story-image img {
+    opacity: 0.6;
+}
+
+/* Capa sobre la imagen */
+.story-image:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Efecto de opacidad sobre la capa al pasar el cursor */
+.story:hover .story-image:after {
+    opacity: 0;
+}
+
+/* Tarjeta de estilo glassmorphism */
+.card.glassmorphism-card {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    transition: transform 0.3s;
+}
+
+/* Efecto de escalar al pasar el cursor sobre la tarjeta */
+.card.glassmorphism-card:hover {
+    transform: scale(1.05);
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Animación para mover las estrellas en un patrón circular */
+@keyframes orbitar {
+    0% {
+        transform: rotate(0deg) translateX(20vw) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(20vw) rotate(-360deg);
+    }
+}
+
+/* Estilo para las estrellas animadas */
+.estrella {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    z-index: -1;
+    width: 1px; /* Ajusta el tamaño de las estrellas si es necesario */
+    height: 1px; /* Ajusta el tamaño de las estrellas si es necesario */
+    animation: orbitar 50s linear infinite; /* Animación infinita */
+}
