@@ -1,14 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,300,500");
 
-* {
-    margin: 0;
+html body {
+		margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    margin: 70px;
+    
     background-color: #070707;
     color: #fff;
     font-family: "Figtree", sans-serif;
@@ -17,6 +13,7 @@ body {
 }
 
 h2 {
+	margin-left: 70px;
     color: #ffffff;
 }
 
@@ -318,4 +315,43 @@ article {
 	100% {
 			transform: rotate(360deg) translateX(20vw) rotate(-360deg);
 	}
+}
+
+.svg-logo {
+	width: 50px;
+	height: 50px;
+}
+
+.navbar-glassmorphism {
+	background: rgba(255, 255, 255); /* Fondo blanco semitransparente */
+	backdrop-filter: blur(10px); /* Efecto de desenfoque */
+	-webkit-backdrop-filter: blur(10px); /* Efecto de desenfoque para navegadores webkit */
+	border: 1px solid rgba(255, 255, 255, 0.3); /* Borde claro */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+	padding: 1rem;
+}
+
+.navbar-glassmorphism .navbar-nav .nav-link {
+	color: black; /* Color del texto */
+	transition: color 0.3s ease-in-out;
+}
+
+.navbar-glassmorphism .navbar-nav .nav-link:hover {
+	color: #1e3a8a; /* Color del texto al pasar el ratón */
+}
+
+.navbar-glassmorphism .form-control {
+	background: rgba(255, 255, 255, 0.2);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	color: white;
+}
+
+.navbar-glassmorphism .btn-outline-success {
+	color: white;
+	border-color: white;
+}
+
+.navbar-glassmorphism .btn-outline-success:hover {
+	color: #ddd;
+	border-color: #ddd;
 }
