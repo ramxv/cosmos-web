@@ -13,6 +13,7 @@ body {
     color: #fff;
     font-family: "Figtree", sans-serif;
     font-size: 21px;
+		position: relative;
 }
 
 h2 {
@@ -294,4 +295,27 @@ article {
 
 .text-content p {
     text-align: justify; /* Justificar el texto de los párrafos */
+}
+
+.estrella {
+	position: absolute;
+	background-color: white;
+	border-radius: 50%;
+	border-style: solid;
+	border-color: white transparent transparent transparent;
+	border-width: 0.1em 0.1em 0 0;
+	z-index: -1;
+	width: 1px; /* Ajusta el tamaño de las estrellas si es necesario */
+	height: 1px; /* Ajusta el tamaño de las estrellas si es necesario */
+	animation: orbitar 50s linear infinite; /* Animación infinita */
+}
+
+/* Animación para mover las estrellas en un patrón circular */
+@keyframes orbitar {
+	0% {
+			transform: rotate(0deg) translateX(20vw) rotate(0deg);
+	}
+	100% {
+			transform: rotate(360deg) translateX(20vw) rotate(-360deg);
+	}
 }
